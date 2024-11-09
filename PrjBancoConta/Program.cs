@@ -1,3 +1,5 @@
+using PrjBancoConta.Forms.Demo;
+
 namespace PrjBancoConta
 {
     internal static class Program
@@ -12,6 +14,9 @@ namespace PrjBancoConta
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new frmPrincipal());
+
+            //Application.Run(new frmDemo());
+
         }
     }
 }

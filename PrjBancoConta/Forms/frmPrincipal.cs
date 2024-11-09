@@ -1,4 +1,5 @@
 using PrjBancoConta.Forms;
+using SamAlvarenga.Ativ_ContaBancaria.Models;
 
 namespace PrjBancoConta
 {
@@ -9,6 +10,9 @@ namespace PrjBancoConta
             InitializeComponent();
         }
 
+        
+        public List<Conta> contas = new List<Conta>();
+
         private void criarContaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //instanciando objeto para guardar na memoria
@@ -17,6 +21,11 @@ namespace PrjBancoConta
             formCriarConta.MdiParent = this;
             //Abrir a janela
             formCriarConta.Show();
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
 
         }
     }

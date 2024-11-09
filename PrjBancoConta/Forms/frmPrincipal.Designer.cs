@@ -30,9 +30,9 @@
         {
             menuPrincipal = new MenuStrip();
             contaToolStripMenuItem = new ToolStripMenuItem();
-            operaçõesToolStripMenuItem = new ToolStripMenuItem();
             criarContaToolStripMenuItem = new ToolStripMenuItem();
             fecharContaToolStripMenuItem = new ToolStripMenuItem();
+            operaçõesToolStripMenuItem = new ToolStripMenuItem();
             menuPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,12 +52,6 @@
             contaToolStripMenuItem.Size = new Size(51, 20);
             contaToolStripMenuItem.Text = "Conta";
             // 
-            // operaçõesToolStripMenuItem
-            // 
-            operaçõesToolStripMenuItem.Name = "operaçõesToolStripMenuItem";
-            operaçõesToolStripMenuItem.Size = new Size(75, 20);
-            operaçõesToolStripMenuItem.Text = "Operações";
-            // 
             // criarContaToolStripMenuItem
             // 
             criarContaToolStripMenuItem.Name = "criarContaToolStripMenuItem";
@@ -71,6 +65,12 @@
             fecharContaToolStripMenuItem.Size = new Size(180, 22);
             fecharContaToolStripMenuItem.Text = "Fechar Conta";
             // 
+            // operaçõesToolStripMenuItem
+            // 
+            operaçõesToolStripMenuItem.Name = "operaçõesToolStripMenuItem";
+            operaçõesToolStripMenuItem.Size = new Size(75, 20);
+            operaçõesToolStripMenuItem.Text = "Operações";
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -81,6 +81,7 @@
             MainMenuStrip = menuPrincipal;
             Name = "frmPrincipal";
             Text = "Gestão de Contas";
+            Load += frmPrincipal_Load;
             menuPrincipal.ResumeLayout(false);
             menuPrincipal.PerformLayout();
             ResumeLayout(false);
